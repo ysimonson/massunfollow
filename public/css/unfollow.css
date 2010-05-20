@@ -1,0 +1,47 @@
+﻿body {
+	background: url(../img/bird.png) no-repeat fixed bottom left;
+	font-family: Helvetica, Arial;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 4em;
+	text-align: right;
+	margin: 0.2em 0.5em 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: 0;
+}
+
+td {
+    text-align: center;
+}
+
+#unfollowButton {
+    text-align: right;
+    padding: 1.5em 0.5em 1em 0;
+}
+
+#unfollowButton a, #unfollowButton a:hover {
+    font-size: 1.2em;
+    color: black;
+    border: 2px solid #49AB3C;
+    background-color: #9EED93;
+    padding: 1em;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.status {
+	text-align: center;
+	margin-top: 5em;
+}
+
+.error {
+    color: red;
+}
