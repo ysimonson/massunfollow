@@ -91,16 +91,16 @@ UnfollowEngine.prototype = {
         var data = [];
 		var self = this;
         
-        $.each(users, function() {
+        $.each(users, function(index, value) {
             var linkToProfile = function(content) {
-    			return '<a href="http://twitter.com/' + this.screenName + '">' + content + '</a>';
+    			return '<a href="http://twitter.com/' + value.screenName + '">' + content + '</a>';
     		};
             
             var checkbox = '<input type="checkbox" checked="checked" />'
-            var profileImage = linkToProfile('<img src="' + this.profileImage + '" alt="" />');
-            var screenName = linkToProfile(this.screenName);
-            var verified = '<img src="/img/' + this.verified + '.png" alt="' + this.verified + '" />'
-            var status = this.status || '&nbsp;';
+            var profileImage = linkToProfile('<img src="' + value.profileImage + '" alt="" width="48" height="48" />');
+            var screenName = linkToProfile(value.screenName);
+            var verified = '<img src="/img/' + value.verified + '.png" alt="' + value.verified + '" />'
+            var status = value.status || '&nbsp;';
             data.push([checkbox, profileImage, screenName, verified, status]);
         });
         
